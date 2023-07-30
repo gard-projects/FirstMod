@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "firstmod:mourn_logs"
+            "items": [
+              "firstmod:mourn_log"
+            ]
           }
         ]
       },
@@ -13,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "firstmod:mourn_planks"
+        "recipe": "firstmod:mourn_wood"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "firstmod:mourn_planks"
+      "firstmod:mourn_wood"
     ]
   },
   "sends_telemetry_event": false

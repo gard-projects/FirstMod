@@ -1,5 +1,0 @@
-// 1.20	2023-07-26T12:17:23.8774852	Tags for minecraft:block mod id firstmod
-d0a37d4984bf132cbf321b0a8a0dcb621be7fa16 data/minecraft/tags/blocks/logs.json
-00cd065e028b31adc751eaadadf4fb9fca51faf2 data/minecraft/tags/blocks/mineable/pickaxe.json
-00cd065e028b31adc751eaadadf4fb9fca51faf2 data/minecraft/tags/blocks/needs_stone_tool.json
-af35370e91e9e59883f261e1bd60671583ef6c91 data/minecraft/tags/blocks/planks.json

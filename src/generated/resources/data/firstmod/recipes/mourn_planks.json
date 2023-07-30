@@ -4,11 +4,11 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "minecraft:logs"
+      "tag": "firstmod:mourn_logs"
     }
   ],
   "result": {
-    "count": 8,
+    "count": 4,
     "item": "firstmod:mourn_planks"
   }
 }

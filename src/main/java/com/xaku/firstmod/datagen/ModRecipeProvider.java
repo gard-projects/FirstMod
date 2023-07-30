@@ -8,6 +8,7 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.ShapelessRecipe;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
@@ -33,7 +34,8 @@ public class ModRecipeProvider extends RecipeProvider {
                 ))
                 .save(consumer);
 
-        planksFromLog(consumer, Registration.MOURN_PLANKS.get(), ItemTags.LOGS, 4);
+        woodFromLogs(consumer, Registration.MOURN_WOOD.get(), Registration.MOURN_LOG.get());
+
 
         // Generation of shapeless recipes
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Registration.VOID_METAL.get(), 9)
@@ -43,5 +45,7 @@ public class ModRecipeProvider extends RecipeProvider {
                         ItemPredicate.Builder.item().of(Registration.VOID_METAL_BLOCK.get()).build()
                 ))
                 .save(consumer);
+
+        planksFromLog(consumer, Registration.MOURN_PLANKS.get(), ModItemTagProvider.MOURN_LOGS, 4);
     }
 }
