@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "firstmod",
+  "ingredients": [
+    {
+      "item": "firstmod:void_metal_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "firstmod:void_metal"
+  }
+}

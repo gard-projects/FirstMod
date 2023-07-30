@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "firstmod",
+  "key": {
+    "#": {
+      "item": "firstmod:void_metal"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "firstmod:void_metal_block"
+  },
+  "show_notification": true
+}

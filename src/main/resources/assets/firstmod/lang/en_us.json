@@ -1,4 +1,19 @@
 {
   "item.firstmod.void_metal": "Void Metal",
-  "item.firstmod.void_fruit": "Void Fruit"
+  "item.firstmod.void_fruit": "Void Fruit",
+  "item.firstmod.void_metal_sword": "Void Sword",
+  "item.firstmod.void_metal_pickaxe": "Void Pickaxe",
+  "item.firstmod.void_metal_axe": "Void Axe",
+  "item.firstmod.void_metal_shovel": "Void Shovel",
+  "item.firstmod.void_metal_hoe": "Void Hoe",
+  "item.firstmod.void_metal_helmet": "Void Helmet",
+  "item.firstmod.void_metal_chestplate": "Void Chestplate",
+  "item.firstmod.void_metal_leggings": "Void Leggings",
+  "item.firstmod.void_metal_boots": "Void Boots",
+  "itemGroup.mod_tab": "First Mod",
+  "block.firstmod.void_metal_block": "Void Metal Block",
+  "block.firstmod.mourn_wood": "Mourn Wood",
+  "block.firstmod.mourn_planks": "Mourn Planks",
+  "block.firstmod.mourn_leaves": "Mourn Leaves",
+  "block.firstmod.mourn_dirt": "Mourn Dirt"
 }
