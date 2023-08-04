@@ -7,6 +7,7 @@ import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.common.data.ForgeAdvancementProvider;
 import net.minecraftforge.data.event.GatherDataEvent;
 
 import java.util.Collections;
@@ -23,6 +24,7 @@ public class DataGeneration {
         // Providers related to assets (client side)
         generator.addProvider(event.includeClient(), new ModBlockStates(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModItemModels(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ModLanguageProvider(packOutput, "en_us"));
 
         // Providers related to data (server side)
         ModBlockTagProvider blockTagProvider = new ModBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
@@ -30,8 +32,9 @@ public class DataGeneration {
         generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagProvider, existingFileHelper));
         generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
         generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
-                List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTable::new, LootContextParamSets.BLOCK))));
-
-
+                List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTable::new, LootContextParamSets.BLOCK),
+                        new LootTableProvider.SubProviderEntry(ModAdvancementLootTable::new, LootContextParamSets.EMPTY))));
+        generator.addProvider(event.includeServer(), new ForgeAdvancementProvider(packOutput, lookupProvider, existingFileHelper,
+                List.of(new VoidArmorAdvancement())));
     }
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left_open",
+  "textures": {
+    "bottom": "firstmod:block/mourn_door_bottom",
+    "top": "firstmod:block/mourn_door_top"
+  }
+}

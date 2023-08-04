@@ -1,0 +1,6 @@
+// 1.20.1	2023-07-31T10:15:15.152832	Tags for minecraft:item mod id firstmod
+6afb08355d7c7bf6d389b4e3a36ac45d4655c0af data/firstmod/tags/items/mourn_logs.json
+50786d7fa11a0652e36e1d84491bfc830fe0f1b7 data/minecraft/tags/items/dirt.json
+b4bdeabd12b473f51eae50866736803c6c0d5f07 data/minecraft/tags/items/leaves.json
+d0a37d4984bf132cbf321b0a8a0dcb621be7fa16 data/minecraft/tags/items/logs.json
+af35370e91e9e59883f261e1bd60671583ef6c91 data/minecraft/tags/items/planks.json

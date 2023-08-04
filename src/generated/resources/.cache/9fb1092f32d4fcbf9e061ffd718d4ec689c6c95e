@@ -1,0 +1,9 @@
+// 1.20.1	2023-07-31T10:15:15.151831	Recipes
+6ff00c81517aa0fabfe8bf70543ca890aa6e1d43 data/firstmod/advancements/recipes/building_blocks/mourn_planks.json
+4040e1f63593f23e2d423e393dda4a3cc7b70a85 data/firstmod/advancements/recipes/building_blocks/mourn_wood.json
+95fd6a46a4df113a23d4b5b5b5bbe722727026cd data/firstmod/advancements/recipes/misc/void_metal.json
+b04371531f12f1cacde1e1aba2246184448b3917 data/firstmod/advancements/recipes/misc/void_metal_block.json
+4c40658fbfd4478b09455ba984beb1695ab0eb25 data/firstmod/recipes/mourn_planks.json
+98dce4e4e121a161d265c57fd557b606cabec7ea data/firstmod/recipes/mourn_wood.json
+81675e41968b26c2337e7eb5572840fd548116b8 data/firstmod/recipes/void_metal.json
+4a2f2ea463014480edc8c6abcf92c48cceb01a93 data/firstmod/recipes/void_metal_block.json

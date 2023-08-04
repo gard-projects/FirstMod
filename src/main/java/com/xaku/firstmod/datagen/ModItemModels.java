@@ -5,7 +5,10 @@ import com.xaku.firstmod.FirstMod;
 import com.xaku.firstmod.Registration;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -52,6 +55,25 @@ public class ModItemModels extends ItemModelProvider {
         withExistingParent("mourn_wood", modLoc("block/mourn_wood"));
         withExistingParent("stripped_mourn_wood", modLoc("block/stripped_mourn_wood"));
         withExistingParent("stripped_mourn_log", modLoc("block/stripped_mourn_log"));
+
+        withExistingParent("mourn_stairs", modLoc("block/mourn_stairs"));
+        withExistingParent("mourn_slab", modLoc("block/mourn_slab"));
+        withExistingParent("mourn_fence_gate", modLoc("block/mourn_fence_gate"));
+        withExistingParent("mourn_trapdoor", modLoc("block/mourn_trapdoor_bottom"));
+        withExistingParent("mourn_pressure_plate", modLoc("block/mourn_pressure_plate"));
+        withExistingParent("mourn_button", modLoc("block/mourn_button_inventory"));
+        withExistingParent("mourn_ladder", modLoc("block/mourn_ladder"));
+        withExistingParent("mourn_trapdoor", modLoc("block/mourn_trapdoor_bottom"));
+        withExistingParent("mourn_fence", modLoc("block/mourn_fence_inventory"));
+        withExistingParent("mourn_hanging_sign", modLoc("block/mourn_hanging_sign"));
+
+        // Blocks of generated type, but with a specific texture for layer0
+//        itemModelBlock(Registration.MOURN_SIGN.get());
+//        itemModelBlock(Registration.MOURN_HANGING_SIGN.get());
+//        itemModelBlock(Registration.MOURN_DOOR.get());
+        basicItem(modLoc("block/mourn_sign"));
+        basicItem(modLoc("block/mourn_hanging_sign"));
+        basicItem(modLoc("block/mourn_door"));
     }
 
 
@@ -66,5 +88,13 @@ public class ModItemModels extends ItemModelProvider {
         return getBuilder(resource.toString())
                 .parent(new ModelFile.UncheckedModelFile("item/handheld"))
                 .texture("layer0", new ResourceLocation(resource.getNamespace(), "item/" + resource.getPath()));
+    }
+
+    public ItemModelBuilder itemModelBlock(Block item) {
+        ResourceLocation resource = ForgeRegistries.ITEMS.getKey(item.asItem());
+        if(resource == null) throw new NullPointerException("Block item " + item + " cannot be found in project.");
+        return getBuilder(resource.toString())
+                .parent(new ModelFile.UncheckedModelFile("item/generated"))
+                .texture("layer0", resource.getPath());
     }
 }

@@ -1,0 +1,10 @@
+// 1.20.1	2023-08-01T15:19:24.0556066	Loot Tables
+53235326b5287570c813e4cd5eb0186e666b9bad data/firstmod/loot_tables/advancements/obtain_void_armor.json
+5d3490bd6a2cca4570fc95b14da0f38693ff8842 data/firstmod/loot_tables/blocks/mourn_dirt.json
+c14673ef41b38f1a4e3f231196b80cd77840b06f data/firstmod/loot_tables/blocks/mourn_leaves.json
+fa941e600c289c34681a626bff2f620095b2a75c data/firstmod/loot_tables/blocks/mourn_log.json
+19732b384ea8624abb1bcfc27ea56c51b32ac96e data/firstmod/loot_tables/blocks/mourn_planks.json
+0b5bbf80db92bac82c61581ddeec464018d61a7b data/firstmod/loot_tables/blocks/mourn_wood.json
+94f0331af7e11b92968bc15ce74e255d6d228e16 data/firstmod/loot_tables/blocks/stripped_mourn_log.json
+681c07f78a806274889cebfa83ce7c1f143f59de data/firstmod/loot_tables/blocks/stripped_mourn_wood.json
+c5d44e37e0f2ceaa75915376e22e954d62ce1549 data/firstmod/loot_tables/blocks/void_metal_block.json
